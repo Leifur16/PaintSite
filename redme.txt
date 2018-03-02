@@ -1,0 +1,9 @@
+Application instructions
+- To move a line press and hold, within 20px, on eather end of the line
+- To move a pen tool stroke, press and hold, within 20px, on on of the points created by the line
+- to move a text press and hold, within 20 px, of the top right corner of the text
+- To move a circle or a rectangle press anywhere within it
+- we append text to the screen with css, this might result in
+    the screen shaking if the scroll bar is present in the browser, this is resolved by zooming out
+
+

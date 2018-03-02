@@ -1,0 +1,110 @@
+<!-- Leifur -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment2</title>
+      <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	  <link rel="stylesheet" type="text/css" href="paintCss.css">
+  </head>
+
+  <body>
+
+
+    <div id="popup" style="display: none;">
+        <div class="areaT">
+          <textarea class="textare" name="textare" id="textare" >textarea</textarea>
+        </div>
+        <div class="fontList">
+          <select name="fontList" id="fontList">
+            <option value="Helvetica">Helvetica</option>
+            <option value="Arial">Arial</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Comic Sans MS">Comic Sans MS</option>
+          </select>
+        </div>
+        <div class="fontSize">
+          <select name="fontSize" id="fontSize">
+            <option value="10px">10</option>
+            <option value="12px">12</option>
+            <option value="14px">14</option>
+            <option value="16px">16</option>
+            <option value="18px">18</option>
+            <option value="20px">20</option>
+            <option value="22px">22</option>
+            <option value="24px">24</option>
+          </select>
+        </div>
+    </div>
+    <img src="logo.png" alt="" id= "logo">
+	<div class="container">
+
+		<div class="canvas">
+			<canvas id="theCanvas" height="550" width="800" style="border:1px solid #000000;">
+			your browser doesn't support html5 canvas</canvas>
+		</div>
+
+		<div class = "commands">
+			<span class ="icon" data-shape = "rectangle" id="square">
+				<i class="fa fa-square-o" tabindex="1"></i>
+			</span>
+			<span class="icon" data-shape = "pen" id="pen">
+				<i class="fa fa-paint-brush" tabindex="1"></i>
+			</span>
+			<span class ="icon" data-shape = "circle" id="circle">
+				<i class="fa fa-circle-o" tabindex="1"></i>
+			</span>
+
+
+			<span class="icon" data-shape = "line" id="line">
+				<i class="fa fa-arrows-v" tabindex="1"></i>
+			</span>
+      <span class="icon" data-shape = "text" id="text" >
+				<i class="fa fa-font" tabindex="1"></i>
+			</span>
+      <span class="icon" data-shape = "hand" id="hand">
+				<i class="fa fa-mouse-pointer" tabindex="1"></i>
+			</span>
+			<span class="back" id="clear">
+				<i class="fa fa-chevron-left" tabindex="1"></i>
+			</span>
+			<span class="forth" id="redo">
+				<i class="fa fa-chevron-right" tabindex="1"></i>
+			</span>
+			<span class="save">
+				<i class="fa fa-floppy-o" tabindex="1" id ="save"></i>
+				<!--<p class="text"></p>-->
+			</span>
+			<span class="load">
+				<i class="fa fa-folder-open" tabindex="1" id ="load"></i>
+			</span>
+      <span class="col">
+          <input type="color" class="color">
+      </span>
+      <span class="wider">
+          <select id="widthChange" class="widthChange">
+            <option>change width</option>
+            <option value="2">2</option>
+            <option value="4">4</option>
+            <option value="6">6</option>
+            <option value="8">8</option>
+            <option value="10">10</option>
+            <option value="12">12</option>
+            <option value="14">14</option>
+          </select>
+      </span>
+		</div>
+	</div>
+
+
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js" charset="utf-8"></script>
+    <script src="Controller.js" charset="utf-8"></script>
+    <script src="shapes.js" charset="utf-8"></script>
+  </body>
+</html>
